@@ -296,3 +296,54 @@ img {
     }
 }
 
+/*----blog section styling--*/
+/* Blog Section Styles */
+#blog {
+    padding: var(--gutter-huge) 0;
+    border-bottom: var(--border-light);
+}
+
+.blog__posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog__post {
+    width: calc(33% - 2rem); /* Adjust as needed for spacing */
+    margin-bottom: var(--gutter-medium);
+    border: 1px solid var(--border-light);
+    padding: var(--gutter-small);
+    box-sizing: border-box;
+}
+
+.blog__post img {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--gutter-small);
+}
+
+.blog__post h3 {
+    font-size: var(--font-size-medium);
+    margin-bottom: var(--gutter-small);
+}
+
+.blog__post a {
+    display: inline-block;
+    margin-top: var(--gutter-small);
+    color: var(--pink);
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+    .blog__posts {
+        flex-direction: column;
+    }
+
+    .blog__post {
+        width: 100%;
+    }
+}
+
+

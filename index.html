@@ -157,6 +157,36 @@
                 <img src="images/delani.png" class="work__image" alt="Project 3" />
               </div>
             </div>
+
+
+
+
+            <div class="work__box">
+                <div class="work__text">
+                  <h3>Hood View</h3>
+                  <p>
+                    This website contains content a hood view web app and what it is about.
+                  <ul class="work__list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Django</li>
+                    
+                  </ul>
+    
+                  <div class="work__links">
+                    <a href="https://nyakiochristine.github.io/hoodview" class="link__text">
+                      Visit site<span>&rarr;</span>
+                    </a>
+                    <a href="https://nyakiochristine.github.io/hoodview/">
+                      <img src="images/hoodview.png" class="work__code" title="View Source Code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="work__image-box">
+                  <img src="images/hoodview.png" class="work__image" alt="Project 3" />
+                </div>
+              </div>
   
   
   
@@ -166,29 +196,24 @@
       </section>
 
 
-
-
-
-
- <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-links")
-        }
-
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-
-        event.currentTarget.classList.add("active-links")
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
+      <section id="blog">
+        <div class="row">
+            <h1>Blog</h1>
+            <div id="blog-posts" class="blog__posts">
+                <!-- Blog posts will be dynamically added here -->
+            </div>
+        </div>
+    </section>
     
 
- </script>   
+
+
+
+
+
+
+
+
+<script src="index.js"  ></script>
 </body>
 </html>

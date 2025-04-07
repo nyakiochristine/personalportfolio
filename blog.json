@@ -1,0 +1,20 @@
+[
+    {
+        "title": "First Blog Post",
+        "image": "images/blogpost1.jpg",
+        "summary":  "HTML is the backbone of web development. Learn the basics of structuring content with tags, elements, and attributes to create your first webpage.",
+        "link": "blog1.html"
+    },
+    {
+        "title": "Second Blog Post",
+        "image": "images/blogpost2.jpeg",
+        "summary": "Embark on your coding journey with essential tips for beginners. Choose a language, understand basic programming concepts, and find resources to kickstart your learning.",
+        "link": "blog2.html"
+    },
+    {
+        "title": "Third Blog Post",
+        "image": "images/blogpost3.jpeg",
+        "summary": "Visual Studio Code is a powerful code editor. Discover how to use its features, extensions, and shortcuts to enhance your coding productivity.",
+        "link": "blog3.html"
+    }
+]
