@@ -27,12 +27,168 @@
 
             </nav>
 
+            <div class="header-text">
+                <p>A Junior Software Developer</p>
+                <h1>Hi, I'm <span>Christine</span> <br>  Mwangi from Kenya</h1>
+
+            </div>
+
 
         </div>
 
     </div>
+    <!--about sectionnnnnn-->
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/" alt="">
 
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Quam placeat pariatur, cumque autem commodi
+                      sunt aliquam tenetur dolorem amet omnis tempore doloremque.
+                     Eum reprehenderit maiores optio accusantium repudiandae ut labore!</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+
+
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br>Building Web Interfaces</li>
+                            <li><span>UI/UX</span> <br>Designing App/Web Interfaces</li>
+                            <li><span>App Development</span> <br>Building Android Apps</li>
+                        </ul>
+                     </div>
+
+
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span> <br>Freelance Web Developer</li>
+                            <li><span>2022-current</span> <br>UI/UX Trainer</li>
+                            <li><span></span>2021-2022 <br>Mobile App internship at SHAWCO</li>
+                        </ul>
+                     </div>
+
+
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span> <br>FullStack Development Training at Moringa</li>
+                            <li><span>2022-2026</span> <br>CS Degree at USIU</li>
+                            <li><span>2025</span> <br>Azure Certification</li>
+                        </ul>
+                     </div>
+
+
+
+                     </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+   <!---------------------services/projects--------->
+
+    <section class="work">
+        <div class="row">
+          <h2>Projects</h2>
+          <div class="work__boxes">
+  
+            <!-- Each div with the work__box class is a project. -->
+  
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Angular Quote App</h3>
+                <p>
+                  This is an Angular Application that allows users to read quotes
+                   and also add their quotes and vote for the existing quotes.
+                </p>
+                <ul class="work__list">
+                  <li>Type Script and JavaScript</li>
+                  <li>Angular</li>
+                  <li>HTML & CSS</li>
+                </ul>
+  
+                <div class="work__links">
+                  <a href="https://quote-application.vercel.app/" target="_blank" class="link__text">
+                    View Website<span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/nyakiochristine/quote-app" title="View Source Code" target="_blank">
+                    <img src="images/angular.png" class="work__code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+
+              <div class="work__image-box">
+                <img src="images/angular.png" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Delani Studio</h3>
+                <p>
+                  This website contains content about the studio does, a portfolio and what it is about.
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  
+                </ul>
+  
+                <div class="work__links">
+                  <a href="https://nyakiochristine.github.io/delanistudio/" class="link__text">
+                    Visit site<span>&rarr;</span>
+                  </a>
+                  <a href="https://nyakiochristine.github.io/delanistudio/">
+                    <img src="images/delani.png" class="work__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="images/delani.png" class="work__image" alt="Project 3" />
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-links")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
     
+
+ </script>   
 </body>
 </html>

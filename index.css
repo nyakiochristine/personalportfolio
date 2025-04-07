@@ -65,3 +65,234 @@ nav ul li a:hover::after{
     width: 160px;
 
 }
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #f30a54;
+}
+
+/*--------about-----*/
+
+
+#about{
+    padding: 80px 0;
+    color: #ababab; ;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links ::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.5s;
+
+}
+
+.tab-links.active-links::after{
+    width: 50%;
+
+
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+
+/*----projects section--*/
+
+
+
+.work__box {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 900px) {
+    .work__box {
+        align-items: initial;
+        flex-direction: column-reverse;
+    }
+}
+
+.work__box:not(:last-child) {
+    margin-bottom: 25rem;
+}
+
+@media(max-width: 500px) {
+    .work__box:not(:last-child) {
+        margin-bottom: 20rem;
+    }
+}
+
+.work__links {
+    display: flex;
+    align-items: center;
+}
+
+.work__text {
+    flex: 0 0 30%;
+}
+
+.work__list {
+    list-style-position: inside;
+    margin-bottom: var(--gutter-normal);
+}
+
+.work__code {
+    display: block;
+    height: 3rem;
+    margin-left: var(--gutter-normal);
+    transition: all .3s;
+}
+
+.work__code:hover {
+    transform: scale(1.2);
+}
+
+.work__image-box {
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(min-width: 901px) {
+    .work__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .work__code {
+        height: 4rem;
+    }
+}
+
+/* General Section Styling */
+section {
+    padding: var(--gutter-huge) 0;
+    border-bottom: var(--border-light);
+}
+
+h2 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-medium);
+}
+
+h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10rem;
+    background: var(--pink);
+    margin: var(--gutter-small) 0;
+}
+
+h3 {
+    font-size: var(--font-size-medium-1);
+    margin-bottom: var(--gutter-small);
+}
+
+p {
+    margin: var(--gutter-small-1) 0;
+}
+
+
+/* General Image Styling */
+img {
+    object-fit: contain;
+    max-width: 100%; /* Makes images responsive */
+}
+
+/* Work Section Image Box */
+.work__image-box {
+    margin-bottom: var(--gutter-normal); /* Adds spacing below image boxes */
+}
+
+@media (min-width: 901px) {
+    .work__image-box {
+        flex: 1; /* Allows the image box to take up remaining space  */
+        margin: 0 0 0 10rem; /* Adds left margin for larger screens */
+    }
+}
+
+/* Work Section Specific Image Styling */
+.work__image {
+    display: block; 
+    width: 100%; 
+    height: auto;
+} 
+
+/* Hover Effects for Images */
+.work__image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 900px) {
+    .work__image-box {
+        margin-bottom: var(--gutter-small); /* Reduces spacing below images for smaller screens */
+    }
+}
+
